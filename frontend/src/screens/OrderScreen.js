@@ -96,7 +96,7 @@ const OrderScreen = () => {
 							<Text mt='4'>
 								{order.isDelivered ? (
 									<Message type='success'>
-										Delivered on {order.deliveredAt}
+										Delivered on {order.deliveredAt.substring(0,10)}
 									</Message>
 								) : (
 									<Message type='warning'>Not Delivered</Message>

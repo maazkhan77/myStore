@@ -3,12 +3,13 @@ import { useState } from 'react';
 import { HiOutlineMenuAlt3, HiShoppingBag, HiUser } from 'react-icons/hi';
 import { IoChevronDown } from 'react-icons/io5';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link as RouterLink, useNavigate } from 'react-router-dom'
+import { Link as RouterLink, useNavigate} from 'react-router-dom'
 import { logout} from '../actions/userActions'
 
 const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+
 
 	const [show, setShow] = useState(false);
 
@@ -18,9 +19,9 @@ const Header = () => {
 	const userDetails = useSelector((state) => state.userDetails);
 	const { user } = userDetails;
 
-	if (user.name) {
-		userInfo.name = user.name;
-	}
+	// if (user.name) {
+	// 	userInfo.name = user.name;
+	// }
 
 	const logoutHandler = () => {
 		dispatch(logout());

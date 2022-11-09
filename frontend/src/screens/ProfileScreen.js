@@ -20,7 +20,7 @@ import { IoWarning } from 'react-icons/io5';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { listMyOrders } from '../actions/orderActions';
-import { getUserDetails, getUserProfileDetails, updateUserProfile } from '../actions/userActions';
+import { getUserProfileDetails, updateUserProfile } from '../actions/userActions';
 import FormContainer from '../components/FormContainer';
 import Message from '../components/Message';
 import { USER_DETAILS_RESET } from '../constants/userConstants';
